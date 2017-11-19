@@ -165,26 +165,21 @@
     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\Editor\InputAxisScrollbarCI.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Fantasy Skybox FREE\Fog and Ambient reference.txt" />
-    <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
     <None Include="Assets\GE Common Assets\GE Touch Joystick\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\GE Common Assets\GE Touch Joystick\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\GE Common Assets\GE Touch Joystick\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
-    <None Include="Assets\GE Common Assets\Readme.txt" />
     <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
     <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
-    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
-    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
-    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
-    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
-    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
-    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
-    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
-    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
-    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
-    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
-    <None Include="Assets\UnityChan\Stage\Shader\AlphaMask.shader" />
-    <None Include="Assets\UnityChan\license.txt" />
+    <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_akarami_blend.shader" />
+    <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_eye.shader" />
+    <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_eye_blend.shader" />
+    <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_eyelash_blend.shader" />
+    <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_fuku.shader" />
+    <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_fuku_ds.shader" />
+    <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_hada.shader" />
+    <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_hada_blend.shader" />
+    <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_hair.shader" />
+    <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_hair_ds.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

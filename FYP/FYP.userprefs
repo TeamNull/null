@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{4D7BA9DC-63CF-1F20-D9E0-619BCC40302F}|">
   <MonoDevelop.Ide.ItemProperties.FYP PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GE Common Assets/GE Touch Joystick/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GUI Animator/GUI Animator FREE/Demo (JavaScript)/Scripts/GA_FREE_JS_Demo01.js">
     <Files>
-      <File FileName="Assets/Fantasy Skybox FREE/Demo/Scripts/GE_FantasySkyboxFREE_Demo.cs" Line="237" Column="4" />
-      <File FileName="Assets/GE Common Assets/GE Touch Joystick/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="146" Column="51" />
+      <File FileName="Assets/GUI Animator/GUI Animator FREE/Demo (JavaScript)/Scripts/GA_FREE_JS_Demo01.js" Line="30" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
