@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Fantasy Skybox FREE/Demo/Fantasy Skybox FREE Demo (960x600px).unity
-  isLoaded: 1
-  isActive: 1
