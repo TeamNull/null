@@ -105,7 +105,7 @@ using UnityEngine.UI;
 // 
 // ######################################################################
 
-public class GE_FantasySkyboxFREE_Demo : MonoBehaviour
+public class Weather : MonoBehaviour
 {
 
 	// ########################################

@@ -19,16 +19,11 @@
     <UnityVersion>5.6.2f1</UnityVersion>
     <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
-    <NoConfig>true</NoConfig>
-    <NoStdLib>true</NoStdLib>
-    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
-    <AutoUnifyAssemblyReferences>false</AutoUnifyAssemblyReferences>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
     <NoStdLib>true</NoStdLib>
     <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
-    <AutoUnifyAssemblyReferences>false</AutoUnifyAssemblyReferences>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -107,11 +102,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GE_FantasySkyboxFREE_Demo.cs" />
     <Compile Include="Assets\Scripts\UnityChan\FaceUpdate.cs" />
-    <Compile Include="Assets\Scripts\UnityChan\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\UnityChan\ThirdPersonCamera.cs" />
     <Compile Include="Assets\Scripts\UnityChan\UnityChanControlScriptWithRgidBody.cs" />
+    <Compile Include="Assets\Scripts\Weather.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_akarami_blend.shader" />
