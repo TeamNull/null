@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Existing Script
 public class FaceUpdate : MonoBehaviour
 {
 	public AnimationClip[] animations;
@@ -16,11 +17,11 @@ public class FaceUpdate : MonoBehaviour
 
 	void OnGUI ()
 	{
-		foreach (var animation in animations) {
+		/*foreach (var animation in animations) {
 			if (GUILayout.Button (animation.name)) {
 				anim.CrossFade (animation.name, 0);
 			}
-		}
+		}*/
 	}
 
 	float current = 0;

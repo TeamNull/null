@@ -6,7 +6,7 @@
 using UnityEngine;
 using System.Collections;
 
-
+//Existing Script
 public class ThirdPersonCamera : MonoBehaviour
 {
 	public float smooth = 3f;		// カメラモーションのスムーズ化用変数
