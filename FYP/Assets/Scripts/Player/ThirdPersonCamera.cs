@@ -20,12 +20,12 @@ public class ThirdPersonCamera : MonoBehaviour
 			jumpPos = GameObject.Find ("JumpPos").transform;
 
 		//カメラをスタートする
-			transform.position = standardPos.position;	
-			transform.forward = standardPos.forward;	
+		transform.position = standardPos.position;	
+		transform.forward = standardPos.forward;	
 	}
 
 	
-	void FixedUpdate ()	// このカメラ切り替えはFixedUpdate()内でないと正常に動かない
+	void FixedUpdate ()
 	{
         if (bQuickSwitch == false)
         {

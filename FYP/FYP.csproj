@@ -102,12 +102,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Enemy\NormalSpider.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyAttribute.cs" />
     <Compile Include="Assets\Scripts\Manager\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\Manager\Weather.cs" />
-    <Compile Include="Assets\Scripts\UnityChan\FaceUpdate.cs" />
-    <Compile Include="Assets\Scripts\UnityChan\ThirdPersonCamera.cs" />
-    <Compile Include="Assets\Scripts\UnityChan\UnityChanControlScriptWithRgidBody.cs" />
+    <Compile Include="Assets\Scripts\Player\FaceUpdate.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAttribute.cs" />
+    <Compile Include="Assets\Scripts\Player\ThirdPersonCamera.cs" />
+    <Compile Include="Assets\Scripts\Player\UnityChanControlScriptWithRgidBody.cs" />
+    <Compile Include="Assets\Scripts\Sword\Sword1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\UnityChan\Shader\Unitychan_chara_akarami_blend.shader" />
