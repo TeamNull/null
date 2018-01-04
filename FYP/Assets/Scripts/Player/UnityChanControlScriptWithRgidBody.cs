@@ -93,7 +93,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		if (Input.GetButtonDown("Jump")) {	// スペースキーを入力したら
 
 			//アニメーションのステートがLocomotionの最中のみジャンプできる
-			if (currentBaseState.nameHash == locoState){
+            if (currentBaseState.fullPathHash == locoState){
 				//ステート遷移中でなかったらジャンプできる
 				if(!anim.IsInTransition(0))
 				{
@@ -114,7 +114,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		// 以下、Animatorの各ステート中での処理
 		// Locomotion中
 		// 現在のベースレイヤーがlocoStateの時
-		if (currentBaseState.nameHash == locoState){
+        if (currentBaseState.fullPathHash == locoState){
 			//カーブでコライダ調整をしている時は、念のためにリセットする
 			if(useCurves){
 				resetCollider();
@@ -122,7 +122,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		}
 		// JUMP中の処理
 		// 現在のベースレイヤーがjumpStateの時
-		else if(currentBaseState.nameHash == jumpState)
+        else if(currentBaseState.fullPathHash == jumpState)
 		{
 			cameraObject.SendMessage("setCameraPositionJumpView");	// ジャンプ中のカメラに変更
 			// ステートがトランジション中でない場合
@@ -163,7 +163,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		}
 		// IDLE中の処理
 		// 現在のベースレイヤーがidleStateの時
-		else if (currentBaseState.nameHash == idleState)
+        else if (currentBaseState.fullPathHash == idleState)
 		{
 			//カーブでコライダ調整をしている時は、念のためにリセットする
 			if(useCurves){
@@ -176,7 +176,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		}
 		// REST中の処理
 		// 現在のベースレイヤーがrestStateの時
-		else if (currentBaseState.nameHash == restState)
+        else if (currentBaseState.fullPathHash == restState)
 		{
 			//cameraObject.SendMessage("setCameraPositionFrontView");		// カメラを正面に切り替える
 			// ステートが遷移中でない場合、Rest bool値をリセットする（ループしないようにする）

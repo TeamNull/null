@@ -9,10 +9,12 @@ public class EnemyAttribute : MonoBehaviour {
     public int exp = 10;
 
     bool isDead = false;
+    Animator anim;
 
     private void Awake()
     {
         currentHealth = startingHealth;
+        anim = GetComponent<Animator>();
     }
 
     // Use this for initialization
@@ -24,7 +26,7 @@ public class EnemyAttribute : MonoBehaviour {
 	void Update () {
         if (isDead) 
         {
-            Destroy(gameObject);
+            anim.SetTrigger("Dead");
         }
 	}
 
@@ -34,7 +36,13 @@ public class EnemyAttribute : MonoBehaviour {
             return;
 
         currentHealth -= amount;
+        anim.SetTrigger("Damage");
 
-        if (currentHealth <= 0) isDead = true;
+        if (currentHealth <= 0) 
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<PlayerAttribute>().GainExp(exp);
+            isDead = true;
+        }
     }
 }
