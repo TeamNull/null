@@ -7,6 +7,7 @@ public class EnemyAttribute : MonoBehaviour {
     public int startingHealth = 100;
     public int currentHealth;
     public int exp = 10;
+    public float sinkSpeed = 2.5f;
 
     bool isDead = false;
     Animator anim;
@@ -24,10 +25,7 @@ public class EnemyAttribute : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (isDead) 
-        {
-            anim.SetTrigger("Dead");
-        }
+
 	}
 
     public void TakeDamage(int amount)
@@ -43,6 +41,14 @@ public class EnemyAttribute : MonoBehaviour {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.GetComponent<PlayerAttribute>().GainExp(exp);
             isDead = true;
+            anim.SetTrigger("Dead");
         }
+    }
+
+    public void StartSinking()
+    {
+        //GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+        GetComponent<Rigidbody>().isKinematic = true;
+        Destroy(gameObject, 2f);
     }
 }
